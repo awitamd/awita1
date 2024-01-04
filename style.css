@@ -1,0 +1,124 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200&display=swap');
+</style>
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', sans-serif;
+}
+
+html {
+    background-color: #14284d;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.p {
+    margin-top: 10px;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+header {
+    margin-top: -50px;
+    width: 80%;
+    display: grid;
+    grid-template-areas:
+     "profil profil"
+     "intro intro"
+     "about skill"
+     "edu lang";
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto;
+     gap: 50px 30px;
+     padding: 50px;
+     box-sizing: border-box;
+}
+.perfil-png {
+    margin-top: 200px;
+    background-image: url(assets/perfil.png);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    grid-area: profil;
+    justify-self: center;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+}
+
+.panel-intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-area: intro;
+    color: bisque;
+    justify-self: center;
+}
+
+.panel-intro .intro1 {
+    font-size: 2.5em;
+}
+.panel-intro .intro2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.about {
+    grid-area: about;
+}
+.skill {
+    grid-area: skill;
+}
+
+.about , .language {
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    color: bisque;
+    background-color: #3f0741;
+    border-radius: 5px;
+    grid-template-columns: 66% auto;
+}
+
+.skill , .education {
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 5px;
+    grid-template-columns: 66% auto;
+}
+
+.education {
+    grid-area: edu;
+}
+
+.language {
+    grid-area: lang;
+}
+
+
+.work-container {
+    display:grid;
+    grid-template-columns: 66% auto;grid-template-columns: 66% auto;
+    padding: 4em 4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    color: black;
+    border: 1px solid black;
+    background-color: grey;
+    font-size: larger;
+    padding: 10px;
+}
+
+.home__social {
+    color: black;
+    padding-top: 25px;
+    font-size: 32px;
